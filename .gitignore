@@ -1,0 +1,26 @@
+# Ignore system files and folders
+.DS_Store
+.vscode/
+node_modules/
+.android/
+.arduinoIDE/
+.bash_history
+.gitconfig
+
+# Ignore project-specific files
+.gitmodules.txt
+/public/img/
+/public/js/
+/public/css/
+
+# Ignore user-specific system files and directories
+# The leading slash may be unnecessary; using a relative path is generally better.
+# If you still want to include them, just make sure they are correct
+/.nuget/
+/.vs/
+# The following entries may already be covered by the above paths; adjust as necessary
+/Documents/
+~/Downloads/
+~/Pictures/
+~/Music/
+~/Videos/
