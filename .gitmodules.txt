@@ -1,0 +1,3 @@
+[submodule "public/SyntaxMarc"]
+    path = public/SyntaxMarc
+    
