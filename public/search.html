@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Result for </title>
+
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/search.css">
+</head>
+<body>
+
+    <nav class="navbar"></nav>
+
+    <section class="search-results">
+        <h2 class="heading">Search Results for <span>product</span></h2>
+        <div class="product-container">
+            <!-- Product Card Template -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">50% off</span>
+                    <img src="img/card1.png" class="product-thumb" alt="">
+                    <button class="card-btn">Add to Wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Grasya Worldwide</h2>
+                    <p class="product-short-des">Dress for the mood you want.</p>
+                    <span class="price">₱799</span><span class="actual-price">₱1599</span>
+                </div>
+            </div>
+            <!-- Add additional product cards as needed -->
+            <div class="product-card">
+                <div class="product-image">
+                    <span class="discount-tag">50% off</span>
+                    <img src="img/card2.png" class="product-thumb" alt="">
+                    <button class="card-btn">Add to Wishlist</button>
+                </div>
+                <div class="product-info">
+                    <h2 class="product-brand">Coziest</h2>
+                    <p class="product-short-des">Confidence is the best outfit.</p>
+                    <span class="price">₱899</span><span class="actual-price">₱1799</span>
+                </div>
+            </div>
+            <!-- Add more product cards here -->
+        </div>
+
+        <div class="no-results" style="display: none;">
+            <h2>No Results Found</h2>
+            <p>Sorry, we couldn't find any products matching your search. Please try a different term.</p>
+            <a href="index.html" class="btn">Go Back to Homepage</a>
+        </div>
+    </section>
+
+    <footer></footer>
+
+    <script src="js/nav.js"></script>
+    <script src="js/footer.js"></script>
+    <script>
+        // Optional: Add a simple script to handle no results found
+        const productContainer = document.querySelector('.product-container');
+        const noResults = document.querySelector('.no-results');
+        
+        if (productContainer.children.length === 0) {
+            productContainer.style.display = 'none';
+            noResults.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
